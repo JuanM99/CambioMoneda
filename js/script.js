@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $('#advDatos').hide();
+    $('#Result').hide();
 
     //var form=$('#form');
 
@@ -12,6 +13,7 @@ $(document).ready(function(){
                 document.form.method="POST";
                 document.form.op.value="1";
                 document.form.submit();
+                $('#Result').show();
             }
             else{
                 $("#advDatos").fadeTo(2000,500).slideUp(500,function(){
@@ -30,6 +32,7 @@ $(document).ready(function(){
                 document.form.method="POST";
                 document.form.op.value="2";
                 document.form.submit();
+                $('#Result').show();
             }
             else{
                 $("#advDatos").fadeTo(2000,500).slideUp(500,function(){
