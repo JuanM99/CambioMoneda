@@ -1,8 +1,6 @@
 $(document).ready(function(){
     $('#advDatos').hide();
-    $('#Result').hide();
-
-    //var form=$('#form');
+    // $('#Result').hide();
 
     $('#btnPen').click(function(){
         $('#form').submit(function(e){
@@ -13,7 +11,7 @@ $(document).ready(function(){
                 document.form.method="POST";
                 document.form.op.value="1";
                 document.form.submit();
-                $('#Result').show();
+                // $('#Result').show();
             }
             else{
                 $("#advDatos").fadeTo(2000,500).slideUp(500,function(){
@@ -32,7 +30,7 @@ $(document).ready(function(){
                 document.form.method="POST";
                 document.form.op.value="2";
                 document.form.submit();
-                $('#Result').show();
+                // $('#Result').show();
             }
             else{
                 $("#advDatos").fadeTo(2000,500).slideUp(500,function(){

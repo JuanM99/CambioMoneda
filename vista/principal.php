@@ -28,7 +28,15 @@
                         Cambiar a USD
                     </button>
                     <hr>
-                    <input type="text" class="form-control text-center fs-3 fw-bolder" id="Result" name="Result" value="<?php echo $_SESSION['Convertidor'];?>" disabled>
+                    <input type="text" class="form-control text-center fs-3 fw-bolder" id="Result" name="Result" 
+                        value="<?php 
+                            if(!isset($_SESSION['Convertidor'])){
+                                echo "";
+                            }
+                            else{
+                                echo $_SESSION['Convertidor'];
+                            }
+                            ?>" disabled>
                     <div class="form-floating alert alert-warning" role="alert" id="advDatos" name="advDatos">
                         ¡Indique la cantidad de dinero a convertir!
                     </div>
